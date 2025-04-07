@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background: #004080;
+    color: #fff;
+    padding: 10px 20px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 24px;
+}
+header h1 img {
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+header a:hover {
+    color: #ffcc00; /* Highlight effect */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(to right, #0066cc, #004080);
+    color: #fff;
+    padding: 50px 20px;
+    background-image: url('images/network6jpg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.hero h2 {
+    margin-top: 0;
+}
+
+/* Services Section */
+.services {
+    padding: 20px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundTransition 50s infinite; /* Retains background transitions */
+    text-align: center;
+}
+.services h2 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+/* Keyframes for Background Transition */
+@keyframes backgroundTransition {
+    0% {
+        background-image: url('images/links6.jpeg');
+    }
+    50% {
+        background-image: url('images/links2.jpeg');
+    }
+   
+    100% {
+        background-image: url('images/links6.jpeg'); /* Default background image */
+    }
+}
+
+/* Service Box Styles */
+.service {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background for text */
+    color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+.service a {
+    text-decoration: none;
+    color: inherit; /* Keeps text color consistent */
+    display: block;
+    transition: transform 0.3s ease; /* Adds hover effect */
+}
+.service a:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+.service img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+.service h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #004080;
+    color: #fff;
+}
