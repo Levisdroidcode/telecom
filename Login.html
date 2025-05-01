@@ -4,7 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General body styles with background image */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('images/smartiot.jpg'); /* Replace with the path to your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* Slight transparency */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav h1 {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        nav h1 img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Login container styling */
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.8); /* Slight transparency */
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,14 +129,14 @@
         </nav>
     </header>
     <main>
-        <h2>Login</h2>
-        <form action="dashboard.html" method="POST">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username" required><br><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-            <button type="submit">Login</button>
-        </form>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="dashboard.html" method="POST">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Blink Technologies. All rights reserved.</p>

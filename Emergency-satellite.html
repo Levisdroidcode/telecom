@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resilient Satellite Communication</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: url('images/satellitecom3.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px 20px;
+    }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+    header h1 img {
+      width: 80px;
+      height: auto;
+      margin-right: 10px;
+    }
+    header ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Main Content */
+    main {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    main h2 {
+      margin-bottom: 30px;
+    }
+    .content-section {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .content-section ul {
+      text-align: left;
+      list-style: disc inside;
+      margin-top: 10px;
+    }
+
+    /* Satellite Animation */
+    .satellite-wrapper {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 30px auto;
+      border: 2px dashed rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+    }
+    .satellite-animation {
+      width: 100px;
+      height: 100px;
+      background: url('images/Ruralsatellitejpg.jpg') no-repeat center center;
+      background-size: contain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -20px;
+      margin-left: -20px;
+      animation: orbit 15s linear infinite;
+    }
+    @keyframes orbit {
+      from {
+        transform: rotate(0deg) translateX(80px) rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg) translateX(80px) rotate(-360deg);
+      }
+    }
+
+    /* Real-Time Status Indicator */
+    .status-indicator {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>
+        <img src="images/blink-logo.png" alt="Blink Logo">
+        Blink Technologies
+      </h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="emergency.html">Emergency</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="content-section">
+      <h2>Resilient Satellite-Based Communication Systems</h2>
+      <p>
+        In disaster-prone areas, establishing a robust communication network is critical for effective emergency response. Our satellite-based systems are engineered with state-of-the-art resilience strategies, ensuring continuous availability even when terrestrial networks fail.
+      </p>
+      <div class="satellite-wrapper">
+        <div class="satellite-animation"></div>
+      </div>
+      <p>
+        The design features multiple layers of redundancy, adaptive routing algorithms, and autonomous recovery protocols. Innovative integration of drone-based mobile link extenders further bolsters connectivity, providing a flexible backup when every second counts.
+      </p>
+      <h3>Key Features & Innovations</h3>
+      <ul>
+        <li><strong>Multi-Layer Redundancy:</strong> Multiple satellites and diversified frequency bands work together to maintain uninterrupted service.</li>
+        <li><strong>Adaptive Routing:</strong> Intelligent algorithms constantly monitor system performance, dynamically rerouting traffic based on real-time diagnostics.</li>
+        <li><strong>Autonomous Operation:</strong> Self-healing mechanisms automatically detect and correct failures, reducing downtime.</li>
+        <li><strong>Drone Integration:</strong> In emergencies, drones can act as temporary mobile extenders, ensuring localized connectivity during critical times.</li>
+      </ul>
+      <div class="status-indicator">
+        <p>Satellite Status: <span id="satStatus">Online</span></p>
+      </div>
+      <p>
+        This cutting-edge approach merges advanced satellite technology with innovative aerial support, paving the way for a new standard in crisis communication.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Blink Technologies. All rights reserved.</p>
+  </footer>
+  <script>
+    // Simulate real-time satellite status updates
+    const statusEl = document.getElementById("satStatus");
+    const statuses = ["Online", "Degraded", "Maintenance", "Rebooting"];
+    let currentIndex = 0;
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % statuses.length;
+      statusEl.textContent = statuses[currentIndex];
+    }, 4000);
+  </script>
+</body>
+</html>

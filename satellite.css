@@ -1,0 +1,59 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('images/satellitecom4.jpeg'); /* Satellite-specific background */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header & Navigation */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px 20px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 24px;
+}
+header h1 img {
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}

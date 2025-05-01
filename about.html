@@ -1,10 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('images/fiberop2jpg.jpg'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Make the header slightly transparent */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav h1 {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        nav h1 img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent footer */
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,14 +95,31 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contacts.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="Sign Up.html">Sign Up</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h2>About Us</h2>
-        <p>Blink Technologies is dedicated to delivering cutting-edge telecommunications solutions to bridge gaps in connectivity and empower communities.</p>
+        <section class="section">
+            <h2>Our Mission</h2>
+            <p>Our mission is to revolutionize digital connectivity by integrating advanced satellite technologies with sustainable, eco-friendly practices. We are dedicated to providing secure, intuitive, and robust technology solutions that ensure every community—regardless of location—has seamless and reliable access to transformative information. By empowering individuals and organizations, we aim to bridge the digital divide and foster innovation in an ever-evolving landscape.</p>
+        </section>
+        <section class="section">
+            <h2>Our Vision</h2>
+            <p>Our vision is to be recognized as a global leader in digital innovation, pioneering the next generation of connected technologies that unite communities worldwide. We envision a future where technological empowerment and sustainability go hand in hand—a future where every individual experiences a secure, eco-conscious, and seamlessly connected digital world. Through continuous innovation and an inclusive approach, we strive to redefine communication and build a brighter, more cohesive tomorrow.</p>
+        </section>
+
+        <!-- Short video clip -->
+        <section class="section">
+            <h2>Our Story</h2>
+            <video controls width="25%" style="border-radius: 5px;">
+                <source src="videos/About.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Blink Technologies. All rights reserved.</p>
     </footer>

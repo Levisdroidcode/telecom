@@ -50,8 +50,8 @@ header a:hover {
     background: linear-gradient(to right, #0066cc, #004080);
     color: #fff;
     padding: 50px 20px;
-    background-image: url('images/network6jpg.jpg');
-    background-size: cover;
+    background-image: url('images/links5.jpeg');
+    background-size: fill;
     background-position: center;
 }
 .hero h2 {
@@ -75,14 +75,14 @@ header a:hover {
 /* Keyframes for Background Transition */
 @keyframes backgroundTransition {
     0% {
-        background-image: url('images/links6.jpeg');
+        background-image: url('images/satellitecom16.jpeg');
     }
     50% {
-        background-image: url('images/links2.jpeg');
+        background-image: url('images/personcelltower.jpeg');
     }
    
     100% {
-        background-image: url('images/links6.jpeg'); /* Default background image */
+        background-image: url('images/satellitecom16.jpeg'); /* Default background image */
     }
 }
 

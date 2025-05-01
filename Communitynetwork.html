@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Network Collaboration</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('images/smartiot.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 28px;
+        }
+
+        /* Form Section */
+        section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #28a745;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #218838;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Collaborate with Blink Technologies</h1>
+        <p>Join us in creating affordable networks and bridging the digital divide.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Submit Your Inquiry</h2>
+            <p>If you're interested in collaborating on community-driven network solutions, fill out the form below:</p>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Inquiry or Proposal:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Share your ideas or ask questions" required></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Blink Technologies. Together for a digitally inclusive future.</p>
+    </footer>
+</body>
+</html>
